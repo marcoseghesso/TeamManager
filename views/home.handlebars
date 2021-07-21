@@ -1,0 +1,35 @@
+<div class="container col-xs-1">
+
+    <h1 class="text-center text-primary article p-3 mb-5">All Staff:</h1>
+
+    {{#each allTestData}}
+
+        <div class="p-5 card text-primary article mb-5">
+
+            <div class="card-body">
+
+                <h1 class="card-title p-4 mb-4">{{this.firstname}} {{this.lastname}} Current Hours:</h1>
+
+                <p>Clinical Hours: {{this.clinicalhours}}</p>
+
+                <p>Support Hours: {{this.supporthours}}</p>
+
+                <p>Awhi Ora Hours: {{this.awhiorahours}}</p>
+
+                <p>Family/Whanau CSW Hours: {{this.fwcsw}}</p>
+
+                <p>Family/Whanau Mentee Hours: {{this.fwmentee}}</p>
+
+                <p>Family/Whanau Group Hours: {{this.fwgroup}}</p>
+
+                <p>Medication Hours: {{this.medication}}</p>
+
+                <p>Comments: {{this.comments}}</p>
+
+            </div>
+
+        </div>
+        
+    {{/each}}
+
+</div>

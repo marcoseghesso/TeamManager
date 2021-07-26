@@ -1,35 +1,38 @@
 <div class="container col-xs-1">
-
-    <h1 class="text-center text-primary article p-3 mb-5">All Staff:</h1>
-
-    {{#each allTestData}}
-
-        <div class="p-5 card text-primary article mb-5">
-
-            <div class="card-body">
-
-                <h1 class="card-title p-4 mb-4">{{this.firstname}} {{this.lastname}} Current Hours:</h1>
-
-                <p>Clinical Hours: {{this.clinicalhours}}</p>
-
-                <p>Support Hours: {{this.supporthours}}</p>
-
-                <p>Awhi Ora Hours: {{this.awhiorahours}}</p>
-
-                <p>Family/Whanau CSW Hours: {{this.fwcsw}}</p>
-
-                <p>Family/Whanau Mentee Hours: {{this.fwmentee}}</p>
-
-                <p>Family/Whanau Group Hours: {{this.fwgroup}}</p>
-
-                <p>Medication Hours: {{this.medication}}</p>
-
-                <p>Comments: {{this.comments}}</p>
-
-            </div>
-
-        </div>
-        
-    {{/each}}
-
+    <h1 class="text-center text-dark jumbotron p-1 mt-5 mb-5">Team Manager</h1>
+    <table class="table table-striped">
+        <thead class="thead-dark">
+            <tr>
+                <th>Staff ID</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Clinical Hours</th>
+                <th>Support Hours</th>
+                <th>AwhiOra Hours</th>
+                <th>FW CSW Hours</th>
+                <th>FW Mentee Hours</th>
+                <th>FW Group Hours</th>
+                <th>Group Hours</th>
+                <th>Comments</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each allTestData}}
+                <tr>
+                    <td>{{this.staffid}}</td>
+                    <td>{{this.firstname}}</td>
+                    <td>{{this.lastname}}</td>
+                    <td>{{this.clinicalhours}}</td>
+                    <td>{{this.supporthours}}</td>
+                    <td>{{this.awhiorahours}}</td>
+                    <td>{{this.fwcsw}}</td>
+                    <td>{{this.fwmentee}}</td>
+                    <td>{{this.fwgroup}}</td>
+                    <td>{{this.medication}}</td>
+                    <td>{{this.comments}}</td>
+                </tr>
+            {{/each}}          
+        </tbody>
+    </table>
 </div>
+

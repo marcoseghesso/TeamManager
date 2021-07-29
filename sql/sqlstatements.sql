@@ -1,4 +1,4 @@
-/* SQL code to ru to create Data Base*/
+/* SQL code to run to create Data Base*/
 
 DROP TABLE IF EXISTS staffmembers;
 
